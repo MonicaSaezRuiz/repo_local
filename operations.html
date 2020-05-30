@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head>
+﻿<!DOCTYPE html><html><head>
 
 <title>Calculator</title><meta charset="utf-8">
 
@@ -14,6 +14,9 @@ function operaciones(op)
 
         restar: function restarNumeros(n1, n2) {
             return (parseInt(n1) - parseInt(n2));
+        },
+        multiplicar: function multiplicarNumeros(n1, n2) {
+            return (parseInt(n1) * parseInt(n2));
         },
         
 
@@ -47,6 +50,10 @@ function operaciones(op)
             case 'restar':
                 var resultado = ops.restar(num1, num2);
                 alert (resultado);
+                break;
+                case 'multiplicar':
+                var resultado = ops.multiplicar(num1, num2);
+                alert(resultado);
                 break;
  
 
